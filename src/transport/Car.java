@@ -1,11 +1,12 @@
 package transport;
 
-import java.security.Key;
-
 public class Car extends Transport<DriverB> {
-    public Car(String brand, String model, double engineVolume, DriverB driver) {
+
+    public Car(String brand, String model, double engineVolume, DriverB driver,BodyType bodyType) {
         super(brand, model, engineVolume, driver);
+
     }
+
 
 
 
@@ -20,6 +21,18 @@ public class Car extends Transport<DriverB> {
         System.out.println("Автомобиль марки " + getBrand() + " закончил движение");
 
     }
+
+    @Override
+    public void printType() {
+
+            if(getBodyType() == null) {
+                System.out.println("Данных по транспортному средству недостаточно");
+            } else {
+                System.out.println(getBodyType());
+
+        }
+    }
+
     @Override
     public void pitStop() {
         System.out.println("Пит стоп у автомобиля");
@@ -47,3 +60,4 @@ public class Car extends Transport<DriverB> {
 
     }
 }
+

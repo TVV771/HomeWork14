@@ -1,10 +1,9 @@
 package transport;
 
 public class Bus extends Transport<DriverD> {
-    public Bus(String brand, String model, double engineVolume, DriverD driver) {
+    public Bus(String brand, String model, double engineVolume, DriverD driver, LoadCapacity loadCapacity) {
         super(brand, model, engineVolume, driver);
     }
-
 
     @Override
     public void startMove() {
@@ -17,6 +16,18 @@ public class Bus extends Transport<DriverD> {
         System.out.println("Автобус марки " + getBrand() + " закончил движение");
 
     }
+
+    @Override
+    public void printType() {
+
+            if(getLoadCapacity() == null) {
+                System.out.println("Данных по транспортному средству недостаточно");
+            } else {
+                System.out.println(getLoadCapacity());
+            }
+        }
+
+
 
     @Override
     public void pitStop() {
@@ -33,6 +44,7 @@ public class Bus extends Transport<DriverD> {
         System.out.println("Лучшее время круга для автобуса в минутах" + theBestTimeInMins);
 
     }
+
 
     @Override
     public void maxSpeed() {

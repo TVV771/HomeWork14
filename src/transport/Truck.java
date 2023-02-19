@@ -1,7 +1,7 @@
 package transport;
 
 public class Truck extends Transport<DriverC> {
-    public Truck(String brand, String model, double engineVolume, DriverC driver) {
+    public Truck(String brand, String model, double engineVolume, DriverC driver, Size size) {
         super(brand, model, engineVolume, driver);
     }
 
@@ -17,6 +17,18 @@ public class Truck extends Transport<DriverC> {
         System.out.println("Грузовик марки " + getBrand() + " закончил движение");
 
     }
+
+    @Override
+    public void printType() {
+
+            if(getSize() == null) {
+                System.out.println("Данных по транспортному средству недостаточно");
+            } else {
+                System.out.println(getSize());
+            }
+        }
+
+
     @Override
     public void pitStop() {
         System.out.println("Пит стоп у грузовика");

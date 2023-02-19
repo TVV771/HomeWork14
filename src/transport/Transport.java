@@ -5,6 +5,34 @@ public abstract class Transport<T extends Driver> implements Competing {
     private final String model;
     private  double engineVolume;
     private T driver;
+    private BodyType bodyType;
+    private LoadCapacity loadCapacity;
+    private Size size;
+
+
+    public BodyType getBodyType() {
+        return bodyType;
+    }
+
+    public void setBodyType(BodyType bodyType) {
+        this.bodyType = bodyType;
+    }
+
+    public LoadCapacity getLoadCapacity() {
+        return loadCapacity;
+    }
+
+    public void setLoadCapacity(LoadCapacity loadCapacity) {
+        this.loadCapacity = loadCapacity;
+    }
+
+    public Size getSize() {
+        return size;
+    }
+
+    public void setSize(Size size) {
+        this.size = size;
+    }
 
     public Transport(String brand,
                      String model,
@@ -53,12 +81,20 @@ public abstract class Transport<T extends Driver> implements Competing {
 
     public abstract void startMove();
     public abstract void finishMove();
+    public abstract void printType();
 
 
     @Override
-    public String toString(){
-        return  "Марка " + brand + ", "
-                + " модель: " + model + ", "
-                + "объем двигателя" + engineVolume ;
+    public String toString() {
+        return "Transport{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", engineVolume=" + engineVolume +
+                ", driver=" + driver +
+                ", bodyType=" + bodyType +
+                ", loadCapacity=" + loadCapacity +
+                ", size=" + size +
+                '}';
     }
 }
+

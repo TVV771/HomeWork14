@@ -11,7 +11,10 @@ public class Main {
                     "Truck brand N"+i,
                     "Truck model N"+i,
                     8.0,
-                    driverC
+                    driverC,
+                    Size.XL
+
+
 
 
             );
@@ -19,29 +22,39 @@ public class Main {
             Car car = new Car(
                     "Car brand N"+i,
                     "Car model N"+i,
-                    1.7,
-                    driverB
+                    1.4,driverB,
+                    BodyType.SEDAN
+
+
+
+
+
+
             );
             DriverD driverD = new DriverD("Driver D" + i,true,7+i);
             Bus bus = new Bus(
                     "Bus brand N"+i,
                     "Bus model N"+i,
                     4.0,
-                    driverD
+                    driverD,
+                    LoadCapacity.N1
+
+
 
 
             );
-            printInfo(car);
-            printInfo(bus);
-            printInfo(truck);
+
+
 
 
 
         };
 
-    }
-    private static void printInfo(Transport<?> transport){
-        System.out.println("Водитель"+transport.getDriver().getName()+" А управляет автомобилем "+transport.getBrand()+" и будет учавствовать в заезде");
+
     }
 
-}
+    }
+
+
+
+
