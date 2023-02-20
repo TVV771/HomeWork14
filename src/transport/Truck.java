@@ -73,4 +73,11 @@ public class Truck extends Transport<DriverC> {
 
     }
 
+    @Override
+    public String toString() {
+        return "Truck{" +
+                "bodyType=" + bodyType +
+                ", loadCapacity=" + loadCapacity +
+                '}';
+    }
 }

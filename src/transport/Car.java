@@ -71,5 +71,12 @@ public class Car extends Transport<DriverB> {
         System.out.println("Максимальная скорость для автомобиля" + maxSpeed);
 
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "bodyType=" + bodyType +
+                '}';
+    }
 }
 

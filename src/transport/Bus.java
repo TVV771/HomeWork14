@@ -91,5 +91,14 @@ public class Bus extends Transport<DriverD> {
         System.out.println("Максимальная скорость для автобуса" + maxSpeed);
 
     }
+
+    @Override
+    public String toString() {
+        return "Bus{" +
+                "bodyType=" + bodyType +
+                ", loadCapacity=" + loadCapacity +
+                ", size=" + size +
+                '}';
+    }
 }
 

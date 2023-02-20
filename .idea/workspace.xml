@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="ДЗ выполнено">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Transport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Truck.java" afterDir="false" />
-    </list>
+    <list default="true" id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="ДЗ выполнено, исправил ошибки" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +72,7 @@
       <workItem from="1676362147652" duration="2874000" />
       <workItem from="1676451441431" duration="4150000" />
       <workItem from="1676776171977" duration="7421000" />
+      <workItem from="1676867051638" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1675068722787</created>
@@ -114,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676781134678</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ДЗ выполнено, исправил ошибки">
+      <created>1676867586051</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676867586051</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +138,7 @@
     <MESSAGE value="ДЗ выполнено!" />
     <MESSAGE value="ДЗ выполнено!!!" />
     <MESSAGE value="ДЗ выполнено" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ выполнено" />
+    <MESSAGE value="ДЗ выполнено, исправил ошибки" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ выполнено, исправил ошибки" />
   </component>
 </project>
