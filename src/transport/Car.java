@@ -1,5 +1,7 @@
 package transport;
 
+import TransportTypeExeption.TransportTypeException;
+
 public class Car extends Transport<DriverB> {
 
     private BodyType bodyType;
@@ -7,6 +9,7 @@ public class Car extends Transport<DriverB> {
         super(brand, model, engineVolume, driver);
 
     }
+
 
     public BodyType getBodyType() {
         return bodyType;
@@ -16,10 +19,18 @@ public class Car extends Transport<DriverB> {
         this.bodyType = bodyType;
     }
 
+
     @Override
-    protected boolean diagnostics() throws Exception {
+    public boolean diagnostics() throws TransportTypeException, Exception {
         return false;
     }
+
+    @Override
+    public Type getType() {
+        return Type.CAR;
+    }
+
+
 
     @Override
     public void startMove() {
@@ -33,16 +44,6 @@ public class Car extends Transport<DriverB> {
 
     }
 
-    @Override
-    public void printType() {
-
-            if(getBodyType() == null) {
-                System.out.println("Данных по транспортному средству недостаточно");
-            } else {
-                System.out.println(getBodyType());
-
-        }
-    }
 
     @Override
     public void pitStop() {
@@ -71,6 +72,15 @@ public class Car extends Transport<DriverB> {
         System.out.println("Максимальная скорость для автомобиля" + maxSpeed);
 
     }
+    @Override
+    public void printType() {
+        if(getBodyType() == null) {
+            System.out.println("Данных по транспортному средству недостаточно");
+        } else {
+            System.out.println(getBodyType());
+        }
+    }
+
 
     @Override
     public String toString() {

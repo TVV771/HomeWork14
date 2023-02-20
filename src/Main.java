@@ -1,3 +1,4 @@
+import TransportTypeExeption.TransportTypeException;
 import transport.*;
 
 import javax.sound.midi.Track;
@@ -13,6 +14,7 @@ public class Main {
                     8.0,
                     driverC,
                     Size.XL
+
 
 
 
@@ -39,9 +41,6 @@ public class Main {
                     driverD,
                     LoadCapacity.N1
 
-
-
-
             );
 
 
@@ -51,6 +50,19 @@ public class Main {
         };
 
 
+    }
+    public static void checkTransport(Transport... transports) throws TransportTypeException {
+        int count = 0;
+        for (Transport transport : transports) {
+            try {
+                if (transport.diagnostics()) {
+                    count++;
+                }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+        System.out.println("Диагностику прошли " + count + " из " + transports.length + " автомобилей");
     }
 
     }

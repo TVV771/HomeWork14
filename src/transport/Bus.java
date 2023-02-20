@@ -1,5 +1,8 @@
 package transport;
 
+import TransportTypeExeption.TransportTypeException;
+import com.sun.jdi.connect.TransportTimeoutException;
+
 public class Bus extends Transport<DriverD> {
     public Bus(String brand, String model, double engineVolume, DriverD driver, LoadCapacity loadCapacity) {
         super(brand, model, engineVolume, driver);
@@ -33,7 +36,7 @@ public class Bus extends Transport<DriverD> {
     }
 
     @Override
-    protected boolean diagnostics() throws Exception {
+    public boolean diagnostics() throws TransportTypeException {
          {
             System.out.println("Автобусу диагностика не требуется");
             return false;
@@ -90,6 +93,11 @@ public class Bus extends Transport<DriverD> {
 
         System.out.println("Максимальная скорость для автобуса" + maxSpeed);
 
+    }
+
+    @Override
+    public Type getType() {
+        return Type.BUS;
     }
 
     @Override

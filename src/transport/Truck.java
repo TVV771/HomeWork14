@@ -1,5 +1,8 @@
 package transport;
 
+import TransportTypeExeption.TransportTypeException;
+import com.sun.jdi.connect.TransportTimeoutException;
+
 public class Truck extends Transport<DriverC> {
     public Truck(String brand, String model, double engineVolume, DriverC driver, Size size) {
         super(brand, model, engineVolume, driver);
@@ -24,9 +27,15 @@ public class Truck extends Transport<DriverC> {
     }
 
     @Override
-    protected boolean diagnostics() throws Exception {
+    public boolean diagnostics() throws TransportTypeException, Exception {
         return false;
     }
+
+    @Override
+    public Type getType() {
+        return Type.TRUCK;
+    }
+
 
     @Override
     public void startMove() {
@@ -40,10 +49,7 @@ public class Truck extends Transport<DriverC> {
 
     }
 
-    @Override
-    public void printType() {
 
-    }
 
 
     @Override
@@ -71,6 +77,14 @@ public class Truck extends Transport<DriverC> {
 
         System.out.println("Максимальная скорость для грузовика" + maxSpeed);
 
+    }
+    @Override
+    public void printType() {
+        if(getLoadCapacity() == null) {
+            System.out.println("Данных по транспортному средству недостаточно");
+        } else {
+            System.out.println(getLoadCapacity());
+        }
     }
 
     @Override

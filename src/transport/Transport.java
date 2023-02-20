@@ -1,22 +1,23 @@
 package transport;
 
+import TransportTypeExeption.TransportTypeException;
+import com.sun.jdi.connect.TransportTimeoutException;
+
 public abstract class Transport<T extends Driver> implements Competing {
     private final String brand;
     private final String model;
     private  double engineVolume;
     private T driver;
+    private Type type;
+    public abstract boolean diagnostics() throws TransportTypeException, Exception;
 
+    public Type getType() {
+        return type;
+    }
 
- private boolean diagnosticPassed;
-   protected abstract boolean diagnostics() throws Exception;
-       public boolean isDiagnosticPassed() {
-               return diagnosticPassed; }
-
-    public void setDiagnosticPassed(boolean diagnosticPassed) {
-            this.diagnosticPassed = diagnosticPassed;
-        }
-
-
+    public void setType(Type type) {
+        this.type = type;
+    }
 
 
     public Transport(String brand,
