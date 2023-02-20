@@ -2,13 +2,24 @@ package transport;
 
 public class Car extends Transport<DriverB> {
 
+    private BodyType bodyType;
     public Car(String brand, String model, double engineVolume, DriverB driver,BodyType bodyType) {
         super(brand, model, engineVolume, driver);
 
     }
 
+    public BodyType getBodyType() {
+        return bodyType;
+    }
 
+    public void setBodyType(BodyType bodyType) {
+        this.bodyType = bodyType;
+    }
 
+    @Override
+    protected boolean diagnostics() throws Exception {
+        return false;
+    }
 
     @Override
     public void startMove() {
@@ -48,6 +59,7 @@ public class Car extends Transport<DriverB> {
         System.out.println("Лучшее время круга для автомобиля в минутах" + theBestTimeInMins);
 
     }
+
 
     @Override
     public void maxSpeed() {

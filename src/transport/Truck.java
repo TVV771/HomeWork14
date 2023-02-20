@@ -4,7 +4,29 @@ public class Truck extends Transport<DriverC> {
     public Truck(String brand, String model, double engineVolume, DriverC driver, Size size) {
         super(brand, model, engineVolume, driver);
     }
+    private BodyType bodyType;
+    private LoadCapacity loadCapacity;
 
+    public BodyType getBodyType() {
+        return bodyType;
+    }
+
+    public void setBodyType(BodyType bodyType) {
+        this.bodyType = bodyType;
+    }
+
+    public LoadCapacity getLoadCapacity() {
+        return loadCapacity;
+    }
+
+    public void setLoadCapacity(LoadCapacity loadCapacity) {
+        this.loadCapacity = loadCapacity;
+    }
+
+    @Override
+    protected boolean diagnostics() throws Exception {
+        return false;
+    }
 
     @Override
     public void startMove() {
@@ -21,12 +43,7 @@ public class Truck extends Transport<DriverC> {
     @Override
     public void printType() {
 
-            if(getSize() == null) {
-                System.out.println("Данных по транспортному средству недостаточно");
-            } else {
-                System.out.println(getSize());
-            }
-        }
+    }
 
 
     @Override
@@ -55,4 +72,5 @@ public class Truck extends Transport<DriverC> {
         System.out.println("Максимальная скорость для грузовика" + maxSpeed);
 
     }
+
 }

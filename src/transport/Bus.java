@@ -4,6 +4,41 @@ public class Bus extends Transport<DriverD> {
     public Bus(String brand, String model, double engineVolume, DriverD driver, LoadCapacity loadCapacity) {
         super(brand, model, engineVolume, driver);
     }
+    private BodyType bodyType;
+    private LoadCapacity loadCapacity;
+    private Size size;
+
+    public BodyType getBodyType() {
+        return bodyType;
+    }
+
+    public void setBodyType(BodyType bodyType) {
+        this.bodyType = bodyType;
+    }
+
+    public LoadCapacity getLoadCapacity() {
+        return loadCapacity;
+    }
+
+    public void setLoadCapacity(LoadCapacity loadCapacity) {
+        this.loadCapacity = loadCapacity;
+    }
+
+    public Size getSize() {
+        return size;
+    }
+
+    public void setSize(Size size) {
+        this.size = size;
+    }
+
+    @Override
+    protected boolean diagnostics() throws Exception {
+         {
+            System.out.println("Автобусу диагностика не требуется");
+            return false;
+        }
+    }
 
     @Override
     public void startMove() {
