@@ -26,8 +26,9 @@ public class Truck extends Transport<DriverC> {
         this.loadCapacity = loadCapacity;
     }
 
+
     @Override
-    public boolean diagnostics() throws TransportTypeException, Exception {
+    public boolean passDiagnostics() throws TransportTypeException {
         return false;
     }
 

@@ -43,7 +43,12 @@ public class Main {
 
             );
 
-
+                try {
+                    checkTransport(bus,truck,car); }
+                catch (TransportTypeException e) {
+                    e.printStackTrace();
+                    System.out.println(e.getMessage());
+                }
 
 
 
@@ -55,7 +60,7 @@ public class Main {
         int count = 0;
         for (Transport transport : transports) {
             try {
-                if (transport.diagnostics()) {
+                if (transport.passDiagnostics()) {
                     count++;
                 }
             } catch (Exception e) {

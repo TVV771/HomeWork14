@@ -20,8 +20,10 @@ public class Car extends Transport<DriverB> {
     }
 
 
+
+
     @Override
-    public boolean diagnostics() throws TransportTypeException, Exception {
+    public boolean passDiagnostics() throws TransportTypeException {
         return false;
     }
 

@@ -9,7 +9,7 @@ public abstract class Transport<T extends Driver> implements Competing {
     private  double engineVolume;
     private T driver;
     private Type type;
-    public abstract boolean diagnostics() throws TransportTypeException, Exception;
+    public abstract boolean passDiagnostics() throws TransportTypeException;
 
     public Type getType() {
         return type;
