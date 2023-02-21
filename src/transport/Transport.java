@@ -1,7 +1,9 @@
 package transport;
 
 import TransportTypeExeption.TransportTypeException;
-import com.sun.jdi.connect.TransportTimeoutException;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Transport<T extends Driver> implements Competing {
     private final String brand;
@@ -10,6 +12,24 @@ public abstract class Transport<T extends Driver> implements Competing {
     private T driver;
     private Type type;
     public abstract boolean passDiagnostics() throws TransportTypeException;
+    private List<Mechanic> mechanicList;
+
+    public Transport(String brand, String model, double engineVolume, T driver) {
+        this.brand = brand;
+        this.model = model;
+        this.engineVolume = engineVolume;
+        this.driver = driver;
+        this.type = type;
+        this.mechanicList = mechanicList;
+    }
+
+    public List<Mechanic> getMechanicList() {
+        return mechanicList;
+    }
+
+    public void setMechanicList(List<Mechanic> mechanicList) {
+        this.mechanicList = mechanicList;
+    }
 
     public Type getType() {
         return type;
@@ -17,24 +37,6 @@ public abstract class Transport<T extends Driver> implements Competing {
 
     public void setType(Type type) {
         this.type = type;
-    }
-
-
-    public Transport(String brand,
-                     String model,
-                     double engineVolume,
-                     T driver) {
-        if(brand == null || brand.isEmpty() ){
-            brand = "default";
-        }
-        this.brand = brand;
-        if(model == null || model.isEmpty() ){
-            model = "default";
-        }
-        this.model = model;
-        setEngineVolume(engineVolume);
-        setDriver(driver);
-
     }
 
     public String getBrand() {
@@ -70,7 +72,5 @@ public abstract class Transport<T extends Driver> implements Competing {
     public abstract void printType();
 
 
-
-    }
-
+}
 

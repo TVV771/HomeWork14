@@ -2,60 +2,46 @@ import TransportTypeExeption.TransportTypeException;
 import transport.*;
 
 import javax.sound.midi.Track;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        Mechanic mechanic1 = new Mechanic("Михаил", "Компания 1", "Автомобиль");
+        Mechanic mechanic2 = new Mechanic("Иван", "Компания 2", "Автобус");
+        Mechanic mechanic3 = new Mechanic("Игорь", "Компания 3", "Грузовик");
 
-        for (int i =1;i<=4;i++){
-            DriverC driverC = new DriverC("Driver C" + i,true,10+i);
-            Truck truck = new Truck(
-                    "Truck brand N"+i,
-                    "Truck model N"+i,
-                    8.0,
-                    driverC,
-                    Size.XL
+        Transport car1 = new Car("Бренд Автомобиля 1", "Модель Автомобиля 1", 3.2, null,BodyType.CROSSOVER,mechanic1);
+        Transport car2 = new Car("Бренд Автомобиля 2", "Модель Автомобиля 2", 4.4, null, BodyType.COUPE,mechanic2);
+        Transport bus1 = new Bus("Бренд Автобуса 3", "Модель Автобуса 2", 3.2, null,LoadCapacity.N1,mechanic3);
+        Transport bus2 = new Bus("Бренд Автобуса 4", "Модель Автобуса 1", 4.4, null, LoadCapacity.N2,mechanic1);
+        Transport truck1 = new Truck("Бренд Грузовика 5", "Модель Грузовика 1", 3.2, null,Size.XL,mechanic2);
+        Transport truck2 = new Truck("Бренд Грузовика 6", "Модель Грузовика 2", 4.4, null,Size.XL,mechanic3);
+        List<Mechanic> mechanic = new ArrayList<>();
 
+        mechanic.add(mechanic1);
+        mechanic.add(mechanic2);
+        mechanic.add(mechanic3);
 
-
-
-
-            );
-            DriverB driverB = new DriverB("Driver B" + i,true,5+i);
-            Car car = new Car(
-                    "Car brand N"+i,
-                    "Car model N"+i,
-                    1.4,driverB,
-                    BodyType.SEDAN
+        for (Mechanic transport : mechanic) {
+            System.out.println( transport.getName() + transport.getCompany()  );
+        }
 
 
 
-
-
-
-            );
-            DriverD driverD = new DriverD("Driver D" + i,true,7+i);
-            Bus bus = new Bus(
-                    "Bus brand N"+i,
-                    "Bus model N"+i,
-                    4.0,
-                    driverD,
-                    LoadCapacity.N1
-
-            );
-
-                try {
-                    checkTransport(bus,truck,car); }
-                catch (TransportTypeException e) {
-                    e.printStackTrace();
-                    System.out.println(e.getMessage());
-                }
+            try {
+                checkTransport(car1,car2,bus1,bus2,truck1,truck2); }
+            catch (TransportTypeException e) {
+                e.printStackTrace();
+                System.out.println(e.getMessage());
+            }
 
 
 
         };
 
 
-    }
+
     public static void checkTransport(Transport... transports) throws TransportTypeException {
         int count = 0;
         for (Transport transport : transports) {
@@ -70,8 +56,4 @@ public class Main {
         System.out.println("Диагностику прошли " + count + " из " + transports.length + " автомобилей");
     }
 
-    }
-
-
-
-
+}

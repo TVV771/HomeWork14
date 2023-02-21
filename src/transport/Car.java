@@ -5,7 +5,7 @@ import TransportTypeExeption.TransportTypeException;
 public class Car extends Transport<DriverB> {
 
     private BodyType bodyType;
-    public Car(String brand, String model, double engineVolume, DriverB driver,BodyType bodyType) {
+    public Car(String brand, String model, double engineVolume, DriverB driver, BodyType bodyType, Mechanic mechanic1) {
         super(brand, model, engineVolume, driver);
 
     }
@@ -91,4 +91,3 @@ public class Car extends Transport<DriverB> {
                 '}';
     }
 }
-

@@ -1,10 +1,9 @@
 package transport;
 
 import TransportTypeExeption.TransportTypeException;
-import com.sun.jdi.connect.TransportTimeoutException;
 
 public class Bus extends Transport<DriverD> {
-    public Bus(String brand, String model, double engineVolume, DriverD driver, LoadCapacity loadCapacity) {
+    public Bus(String brand, String model, double engineVolume, DriverD driver, LoadCapacity loadCapacity, Mechanic mechanic3) {
         super(brand, model, engineVolume, driver);
     }
     private BodyType bodyType;
@@ -57,12 +56,12 @@ public class Bus extends Transport<DriverD> {
     @Override
     public void printType() {
 
-            if(getLoadCapacity() == null) {
-                System.out.println("Данных по транспортному средству недостаточно");
-            } else {
-                System.out.println(getLoadCapacity());
-            }
+        if(getLoadCapacity() == null) {
+            System.out.println("Данных по транспортному средству недостаточно");
+        } else {
+            System.out.println(getLoadCapacity());
         }
+    }
 
 
 
@@ -108,4 +107,3 @@ public class Bus extends Transport<DriverD> {
                 '}';
     }
 }
-

@@ -1,10 +1,9 @@
 package transport;
 
 import TransportTypeExeption.TransportTypeException;
-import com.sun.jdi.connect.TransportTimeoutException;
 
 public class Truck extends Transport<DriverC> {
-    public Truck(String brand, String model, double engineVolume, DriverC driver, Size size) {
+    public Truck(String brand, String model, double engineVolume, DriverC driver, Size size, Mechanic mechanic2) {
         super(brand, model, engineVolume, driver);
     }
     private BodyType bodyType;

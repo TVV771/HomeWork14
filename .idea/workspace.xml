@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="ДЗ выполнено, исправил ошибки)">
+      <change afterPath="$PROJECT_DIR$/src/transport/Mechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/Station.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TransportTypeExeption/TransportTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TransportTypeExeption/TransportTypeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Transport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw1.5" />
+        <entry key="$PROJECT_DIR$" value="hw1.6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +65,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +88,8 @@
       <workItem from="1676451441431" duration="4150000" />
       <workItem from="1676776171977" duration="7421000" />
       <workItem from="1676867051638" duration="5477000" />
-      <workItem from="1676961745738" duration="618000" />
+      <workItem from="1676961745738" duration="11786000" />
+      <workItem from="1676973673413" duration="4219000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1675068722787</created>
@@ -135,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676867935003</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ДЗ выполнено, исправил ошибки)">
+      <created>1676962574203</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676962574203</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
