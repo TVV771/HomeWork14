@@ -14,6 +14,15 @@ public abstract class Transport<T extends Driver> implements Competing {
     public abstract boolean passDiagnostics() throws TransportTypeException;
     private List<Mechanic> mechanicList;
 
+    public Transport(String brand, String model, double engineVolume, T driver, Type type, List<Mechanic> mechanicList) {
+        this.brand = brand;
+        this.model = model;
+        this.engineVolume = engineVolume;
+        this.driver = driver;
+        this.type = type;
+        this.mechanicList = mechanicList;
+    }
+
     public Transport(String brand, String model, double engineVolume, T driver) {
         this.brand = brand;
         this.model = model;

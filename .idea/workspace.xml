@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="ДЗ выполнено, исправил ошибки)">
-      <change afterPath="$PROJECT_DIR$/src/transport/Mechanic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Station.java" afterDir="false" />
+    <list default="true" id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="ДЗ выполнено">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Station.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Transport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,8 @@
       <workItem from="1676776171977" duration="7421000" />
       <workItem from="1676867051638" duration="5477000" />
       <workItem from="1676961745738" duration="11786000" />
-      <workItem from="1676973673413" duration="4219000" />
+      <workItem from="1676973673413" duration="4932000" />
+      <workItem from="1677227850468" duration="1033000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1675068722787</created>
@@ -147,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676962574203</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ДЗ выполнено">
+      <created>1676978031669</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676978031669</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,9 +172,9 @@
     <MESSAGE value="." />
     <MESSAGE value="ДЗ выполнено!" />
     <MESSAGE value="ДЗ выполнено!!!" />
-    <MESSAGE value="ДЗ выполнено" />
     <MESSAGE value="ДЗ выполнено, исправил ошибки" />
     <MESSAGE value="ДЗ выполнено, исправил ошибки)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ выполнено, исправил ошибки)" />
+    <MESSAGE value="ДЗ выполнено" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ выполнено" />
   </component>
 </project>

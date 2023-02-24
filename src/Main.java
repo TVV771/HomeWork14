@@ -24,7 +24,8 @@ public class Main {
         mechanic.add(mechanic3);
 
         for (Mechanic transport : mechanic) {
-            System.out.println( transport.getName() + transport.getCompany()  );
+            System.out.println( transport+ " " + transport.getName() + transport.getCompany()  );
+            System.out.println(Station.getQueue());
         }
 
 
