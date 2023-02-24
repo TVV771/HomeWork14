@@ -3,7 +3,10 @@ import transport.*;
 
 import javax.sound.midi.Track;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +29,11 @@ public class Main {
         for (Mechanic transport : mechanic) {
             System.out.println( transport+ " " + transport.getName() + transport.getCompany()  );
             System.out.println(Station.getQueue());
+        }
+        Map<Transport, Mechanic> map = new HashMap<>();
+
+        for (Mechanic transport : mechanic) {
+            map.put((Transport) mechanic, mechanic.get(Integer.parseInt("Povtor")));
         }
 
 
@@ -56,5 +64,6 @@ public class Main {
         }
         System.out.println("Диагностику прошли " + count + " из " + transports.length + " автомобилей");
     }
+
 
 }
