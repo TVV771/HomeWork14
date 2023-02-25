@@ -2,10 +2,7 @@ import TransportTypeExeption.TransportTypeException;
 import transport.*;
 
 import javax.sound.midi.Track;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 public class Main {
@@ -27,7 +24,7 @@ public class Main {
         mechanic.add(mechanic3);
 
         for (Mechanic transport : mechanic) {
-            System.out.println( transport+ " " + transport.getName() + transport.getCompany()  );
+            System.out.println( transport + " " + transport.getName() + transport.getCompany() + transport.getTransportType()  );
             System.out.println(Station.getQueue());
         }
         Map<Transport, Mechanic> map = new HashMap<>();
