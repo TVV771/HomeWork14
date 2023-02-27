@@ -1,7 +1,6 @@
 import TransportTypeExeption.TransportTypeException;
 import transport.*;
 
-import javax.sound.midi.Track;
 import java.util.*;
 
 
@@ -42,8 +41,8 @@ public class Main {
                 System.out.println(e.getMessage());
             }
 
-
-
+        Station station = new Station();
+        station.addCarYoQueue(bus2);
         };
 
 

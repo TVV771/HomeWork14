@@ -22,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw1.6" />
+        <entry key="$PROJECT_DIR$" value="hw1.8" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +60,7 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -86,6 +87,7 @@
       <workItem from="1676973673413" duration="4932000" />
       <workItem from="1677227850468" duration="1741000" />
       <workItem from="1677335618783" duration="1350000" />
+      <workItem from="1677474509600" duration="2110000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1675068722787</created>
