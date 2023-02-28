@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="ДЗ выполнено, ошибки исправлены">
+    <list default="true" id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="ДЗ выполнено, ошибки исправлены&#10;,оздал объект класса Station в main'e и вызови метод addCarYoQueue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Transport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +91,8 @@
       <workItem from="1676973673413" duration="4932000" />
       <workItem from="1677227850468" duration="1741000" />
       <workItem from="1677335618783" duration="1350000" />
-      <workItem from="1677474509600" duration="2110000" />
+      <workItem from="1677474509600" duration="2244000" />
+      <workItem from="1677550866708" duration="3674000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1675068722787</created>
@@ -159,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677228950843</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ДЗ выполнено, ошибки исправлены&#10;,оздал объект класса Station в main'e и вызови метод addCarYoQueue">
+      <created>1677476801593</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677476801593</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +196,7 @@
     <MESSAGE value="ДЗ выполнено, исправил ошибки)" />
     <MESSAGE value="ДЗ выполнено" />
     <MESSAGE value="ДЗ выполнено, ошибки исправлены" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ выполнено, ошибки исправлены" />
+    <MESSAGE value="ДЗ выполнено, ошибки исправлены&#10;,оздал объект класса Station в main'e и вызови метод addCarYoQueue" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ выполнено, ошибки исправлены&#10;,оздал объект класса Station в main'e и вызови метод addCarYoQueue" />
   </component>
 </project>

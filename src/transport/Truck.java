@@ -2,10 +2,15 @@ package transport;
 
 import TransportTypeExeption.TransportTypeException;
 
+import java.util.List;
+
 public class Truck extends Transport<DriverC> {
-    public Truck(String brand, String model, double engineVolume, DriverC driver, Size size, Mechanic mechanic2) {
-        super(brand, model, engineVolume, driver);
+    public Truck(String brand, String model, double engineVolume, DriverC driver, Type type, List<Mechanic> mechanicList, BodyType bodyType, LoadCapacity loadCapacity) {
+        super(brand, model, engineVolume, driver, type, mechanicList);
+        this.bodyType = bodyType;
+        this.loadCapacity = loadCapacity;
     }
+
     private BodyType bodyType;
     private LoadCapacity loadCapacity;
 

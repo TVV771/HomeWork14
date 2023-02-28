@@ -2,14 +2,16 @@ package transport;
 
 import TransportTypeExeption.TransportTypeException;
 
+import java.util.List;
+
 public class Car extends Transport<DriverB> {
 
     private BodyType bodyType;
-    public Car(String brand, String model, double engineVolume, DriverB driver, BodyType bodyType, Mechanic mechanic1) {
-        super(brand, model, engineVolume, driver);
 
+    public Car(String brand, String model, double engineVolume, DriverB driver, Type type, List<Mechanic> mechanicList, BodyType bodyType) {
+        super(brand, model, engineVolume, driver, type, mechanicList);
+        this.bodyType = bodyType;
     }
-
 
     public BodyType getBodyType() {
         return bodyType;

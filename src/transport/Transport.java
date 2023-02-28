@@ -23,14 +23,7 @@ public abstract class Transport<T extends Driver> implements Competing {
         this.mechanicList = mechanicList;
     }
 
-    public Transport(String brand, String model, double engineVolume, T driver) {
-        this.brand = brand;
-        this.model = model;
-        this.engineVolume = engineVolume;
-        this.driver = driver;
-        this.type = type;
-        this.mechanicList = mechanicList;
-    }
+
 
     public List<Mechanic> getMechanicList() {
         return mechanicList;

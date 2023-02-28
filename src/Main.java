@@ -10,23 +10,31 @@ public class Main {
         Mechanic mechanic2 = new Mechanic("Иван", "Компания 2", "Автобус");
         Mechanic mechanic3 = new Mechanic("Игорь", "Компания 3", "Грузовик");
 
-        Transport car1 = new Car("Бренд Автомобиля 1", "Модель Автомобиля 1", 3.2, null,BodyType.CROSSOVER,mechanic1);
-        Transport car2 = new Car("Бренд Автомобиля 2", "Модель Автомобиля 2", 4.4, null, BodyType.COUPE,mechanic2);
-        Transport bus1 = new Bus("Бренд Автобуса 3", "Модель Автобуса 2", 3.2, null,LoadCapacity.N1,mechanic3);
-        Transport bus2 = new Bus("Бренд Автобуса 4", "Модель Автобуса 1", 4.4, null, LoadCapacity.N2,mechanic1);
-        Transport truck1 = new Truck("Бренд Грузовика 5", "Модель Грузовика 1", 3.2, null,Size.XL,mechanic2);
-        Transport truck2 = new Truck("Бренд Грузовика 6", "Модель Грузовика 2", 4.4, null,Size.XL,mechanic3);
+
+        Transport car1 = new Car("Бренд Автомобиля 1", "Модель Автомобиля 1", 3.2, null, Type.CAR,null,BodyType.COUPE);
+        Transport car2 = new Car("Бренд Автомобиля 2", "Модель Автомобиля 2", 4.4, null,Type.CAR,null,BodyType.COUPE );
+        Transport bus1 = new Bus("Бренд Автобуса 3", "Модель Автобуса 2", 3.2, null,Type.BUS,null,BodyType.MINIVAN,LoadCapacity.N2,Size.XL);
+        Transport bus2 = new Bus("Бренд Автобуса 4", "Модель Автобуса 1", 4.4, null,Type.BUS,null,BodyType.MINIVAN,LoadCapacity.N2,Size.XL);
+        Transport truck1 = new Truck("Бренд Грузовика 5", "Модель Грузовика 1", 3.2, null,Type.TRUCK,null,BodyType.FAN,LoadCapacity.N3);
+        Transport truck2 = new Truck("Бренд Грузовика 6", "Модель Грузовика 2", 4.4, null,Type.TRUCK,null,BodyType.FAN,LoadCapacity.N3);
         List<Mechanic> mechanic = new ArrayList<>();
+
+
+
 
         mechanic.add(mechanic1);
         mechanic.add(mechanic2);
         mechanic.add(mechanic3);
 
+
         for (Mechanic transport : mechanic) {
-            System.out.println( transport + " " + transport.getName() + transport.getCompany() + transport.getTransportType()  );
+            System.out.println( transport + " " + transport.getName() + transport.getCompany() + transport.getTransportType()    );
             System.out.println(Station.getQueue());
+
         }
         Map<Transport, Mechanic> map = new HashMap<>();
+
+
 
         for (Mechanic transport : mechanic) {
             map.put((Transport) mechanic, mechanic.get(Integer.parseInt("Povtor")));
@@ -43,7 +51,12 @@ public class Main {
 
         Station station = new Station();
         station.addCarYoQueue(bus2);
-        };
+        Transport Transport = null;
+        Transport transport1 = Transport;
+        transport1.setMechanicList(null);
+
+    }
+
 
 
 
@@ -58,8 +71,11 @@ public class Main {
                 throw new RuntimeException(e);
             }
         }
-        System.out.println("Диагностику прошли " + count + " из " + transports.length + " автомобилей");
+        System.out.println("Диагностику прошли " + count + " из " + transports.length + " автомобилей" );
     }
+  
+  
+
 
 
 }
