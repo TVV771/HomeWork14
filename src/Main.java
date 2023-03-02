@@ -17,10 +17,23 @@ public class Main {
         Transport bus2 = new Bus("Бренд Автобуса 4", "Модель Автобуса 1", 4.4, null,Type.BUS,null,BodyType.MINIVAN,LoadCapacity.N2,Size.XL);
         Transport truck1 = new Truck("Бренд Грузовика 5", "Модель Грузовика 1", 3.2, null,Type.TRUCK,null,BodyType.FAN,LoadCapacity.N3);
         Transport truck2 = new Truck("Бренд Грузовика 6", "Модель Грузовика 2", 4.4, null,Type.TRUCK,null,BodyType.FAN,LoadCapacity.N3);
+
+        Driver driverB1 = new DriverB("Имя 1", true, 12);
+        Driver driverB2 = new DriverB("Имя 2", true, 6);
+        Driver driverC1 = new DriverB("Имя 3", true, 7);
+        Driver driverC2 = new DriverB("Имя 4", true, 9);
+        Driver driverD1 = new DriverB("Имя 5", true, 5);
+        Driver driverD2 = new DriverB("Имя 6", true, 7);
+        List<Driver> drivers = new ArrayList<>();
+
+        drivers.add(driverB1);
+        drivers.add(driverB2);
+        drivers.add(driverC1);
+        drivers.add(driverC2);
+        drivers.add(driverD1);
+        drivers.add(driverD2);
+
         List<Mechanic> mechanic = new ArrayList<>();
-
-
-
 
         mechanic.add(mechanic1);
         mechanic.add(mechanic2);
@@ -33,6 +46,19 @@ public class Main {
 
         }
         Map<Transport, Mechanic> map = new HashMap<>();
+
+        Set<Driver> driverSet = new HashSet<>();
+
+        for (Driver driver : drivers) {
+            driverSet.add(driver);
+        }
+
+        Iterator<Driver> iterator = driverSet.iterator();
+
+        while (iterator.hasNext()) {
+            Driver driver = iterator.next();
+            System.out.println(driver);
+        }
 
 
 
@@ -56,6 +82,10 @@ public class Main {
         transport1.setMechanicList(null);
 
     }
+
+
+
+
 
 
 
