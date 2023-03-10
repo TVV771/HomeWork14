@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="ДЗ выполнено, ошибки исправлены&#10;,оздал объект класса Station в main'e и вызови метод addCarYoQueue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hw1.7" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2L2UUjy0WC3yBPoWYHWhAKboXXL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="TransportTypeExeption" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="HomeWork1.1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="606e98bd-deba-4a89-afc2-3919d157fb14" name="Changes" comment="" />
+      <created>1675068691861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675068691861</updated>
+      <workItem from="1675068693761" duration="6331000" />
+      <workItem from="1675689340035" duration="27000" />
+      <workItem from="1675690169333" duration="3901000" />
+      <workItem from="1675749662161" duration="112000" />
+      <workItem from="1675846760703" duration="4761000" />
+      <workItem from="1676013101811" duration="6037000" />
+      <workItem from="1676022793668" duration="39000" />
+      <workItem from="1676362147652" duration="2874000" />
+      <workItem from="1676451441431" duration="4150000" />
+      <workItem from="1676776171977" duration="7421000" />
+      <workItem from="1676867051638" duration="5477000" />
+      <workItem from="1676961745738" duration="11786000" />
+      <workItem from="1676973673413" duration="4932000" />
+      <workItem from="1677227850468" duration="1741000" />
+      <workItem from="1677335618783" duration="1350000" />
+      <workItem from="1677474509600" duration="2244000" />
+      <workItem from="1677550866708" duration="3674000" />
+      <workItem from="1677741427605" duration="977000" />
+    </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1675068722787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675068722787</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ДЗ выполнено!">
+      <created>1675694027079</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675694027079</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ДЗ выполнено!!!">
+      <created>1675849758516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675849758516</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ДЗ выполнено">
+      <created>1676018954235</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676018954235</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ДЗ выполнено">
+      <created>1676781134678</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676781134678</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ДЗ выполнено, исправил ошибки">
+      <created>1676867586051</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676867586051</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ДЗ выполнено, исправил ошибки)">
+      <created>1676867935003</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676867935003</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ДЗ выполнено, исправил ошибки)">
+      <created>1676962574203</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676962574203</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ДЗ выполнено">
+      <created>1676978031669</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676978031669</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ДЗ выполнено, ошибки исправлены">
+      <created>1677228950843</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677228950843</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ДЗ выполнено, ошибки исправлены&#10;,оздал объект класса Station в main'e и вызови метод addCarYoQueue">
+      <created>1677476801593</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677476801593</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <MESSAGE value="ДЗ выполнено!" />
+    <MESSAGE value="ДЗ выполнено!!!" />
+    <MESSAGE value="ДЗ выполнено, исправил ошибки" />
+    <MESSAGE value="ДЗ выполнено, исправил ошибки)" />
+    <MESSAGE value="ДЗ выполнено" />
+    <MESSAGE value="ДЗ выполнено, ошибки исправлены" />
+    <MESSAGE value="ДЗ выполнено, ошибки исправлены&#10;,оздал объект класса Station в main'e и вызови метод addCarYoQueue" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ выполнено, ошибки исправлены&#10;,оздал объект класса Station в main'e и вызови метод addCarYoQueue" />
+  </component>
+</project>
